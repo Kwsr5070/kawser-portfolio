@@ -1,5 +1,7 @@
 
 import { NavLink } from 'react-router-dom';
+import {FaBars,FaTimes} from 'react-icons/fa'
+import logo from '../assets/logo.jpg'
 
 const Navbar = () => {
     const navLinks=<>
@@ -11,7 +13,7 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="navbar bg-red-200">
+        <div className="navbar bg-[#0a192f] text-gray-300 fixed w-full h-20 px-8">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,6 +23,9 @@ const Navbar = () => {
         {navLinks}
         
       </ul>
+    </div>
+    <div>
+        <img className='w-16 rounded-full' src={logo} alt="logo image" />
     </div>
     
   </div>
