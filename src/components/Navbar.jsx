@@ -59,9 +59,7 @@ const Navbar = () => {
           {navLinks}
         </ul>
       </div>
-      <div className="navbar-end">
-        <NavLink to='/contact' className="btn">Contact</NavLink>
-      </div>
+      <div className="px-32 text-3xl text-end">Md Kawser Ahmed</div>
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
         </ul>
