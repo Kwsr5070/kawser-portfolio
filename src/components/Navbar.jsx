@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin,  } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import logo from '../assets/logo.jpg';
+import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -63,26 +63,19 @@ const Navbar = () => {
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
         </ul>
-          <li className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-blue-700'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="">
-              Linkedin<FaLinkedin size={40}/>
-            </a>
-          </li>
-          <li className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-gray-700'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="">
-              Github<FaGithub size={40}/>
-            </a>
-          </li>
-          <li className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-[#6fc2b0]'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="">
-              Email<HiOutlineMail size={40}/>
-            </a>
-          </li>
-          <li className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-gray-500'>
-            <a className='flex justify-between items-center w-full text-gray-300' href="">
-              Resume<BsFillPersonLinesFill size={40}/>
-            </a>
-          </li>
+          
+        <a href="https://www.linkedin.com/in/md-kawser-ahmed-97428a262" target="_blank" rel="noopener noreferrer" className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-blue-700'>
+          <span className='flex justify-between items-center w-full text-gray-300'>LinkedIn <FaLinkedin size={40}/></span>
+        </a>
+        <a href="https://github.com/Kwsr5070" target="_blank" rel="noopener noreferrer" className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-gray-700'>
+          <span className='flex justify-between items-center w-full text-gray-300'>GitHub <FaGithub size={40}/></span>
+        </a>
+        <a href="mailto:mdkwsr5070@gmail.com" className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-[#6fc2b0]'>
+          <span className='flex justify-between items-center w-full text-gray-300'>Email <HiOutlineMail size={40}/></span>
+        </a>
+        <a href="https://wa.me/01857399180" target="_blank" rel="noopener noreferrer" className='w-[140px] h-60px flex justify-between item center ml-[-100px] hover:ml-[-2px] duration-300 bg-gray-500'>
+          <span className='flex justify-between items-center w-full text-gray-300'>Whatsapp <FaWhatsapp size={40}/></span>
+        </a>
 
       </div>
     </div>

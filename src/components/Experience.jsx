@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.jpg';
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const Experience = () => {
     return (
@@ -99,6 +101,14 @@ const Experience = () => {
                             </div>
                         </div>
                     </div>
+                    <div className="text-center py-4">
+                    <Link to="/contact" className="text-gray-300 group border px-6 py-3 flex items-center shadow-md hover:bg-gray-950 hover:border-pink-600 transition duration-300 ease-in-out">
+                        Lets Next
+                        <span className="group-hover:rotate-90 duration-300">
+                        <HiArrowNarrowRight className=" ml-2"/>
+                      </span>
+                    </Link>
+                </div> 
                 </div>
             </div>
         </div>

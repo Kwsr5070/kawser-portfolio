@@ -6,6 +6,8 @@ import react from '../assets/React.webp'
 import tailwind from '../assets/tailwind-css7675.logowik.com.webp'
 import github from '../assets/25231.png'
 import AWS  from '../assets/Amazon_Web_Services-Logo.wine.png'
+import { Link } from 'react-router-dom'
+import { HiArrowNarrowRight } from 'react-icons/hi'
 
 
 const Skill = () => {
@@ -49,6 +51,15 @@ const Skill = () => {
                         <img className='w-20 mx-auto' src={AWS} alt="AWS Icon" />
                         <p className='my-4'>AWS</p>
                     </div>
+                    <div className="text-center py-4">
+                    <Link to="/experience" className="text-gray-300 group border px-6 py-3 flex items-center shadow-md hover:bg-gray-950 hover:border-pink-600 transition duration-300 ease-in-out">
+                        Lets next 
+
+                        <span className="group-hover:rotate-90 duration-300">
+                        <HiArrowNarrowRight className=" ml-2"/>
+                      </span>
+                    </Link>
+                </div> 
                 </div>
             </div>
         </div>

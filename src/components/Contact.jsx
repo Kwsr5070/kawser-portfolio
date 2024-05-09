@@ -1,8 +1,18 @@
 import { FaWhatsapp, FaEnvelope, FaPhone } from "react-icons/fa";
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
     return (
         <div className="bg-[#0a192f] min-h-screen text-gray-300 flex flex-col justify-center items-center p-4">
+            <div className="text-center py-4 ">
+                    <Link to="/" className="text-gray-300 group border px-6 py-3 flex items-center shadow-md hover:bg-gray-950 hover:border-pink-600 transition duration-300 ease-in-out">
+                        Main Manu
+                        <span className="group-hover:rotate-90 duration-300">
+                        <HiArrowNarrowRight className=" ml-2"/>
+                      </span>
+                    </Link>
+                </div> 
             <div className="flex flex-col gap-8 px-4 md:px-48 py-8 md:py-32 max-w-screen-lg w-full">
                 {/* Email */}
                 <a href="mailto:mdkwsr5070@gmail.com" className="flex items-center text-gray-300 hover:text-orange-400">
@@ -35,7 +45,14 @@ const Contact = () => {
                 <textarea className="bg-slate-600" name="message" placeholder="Message" cols={30} rows={10}></textarea>
                 <button type="submit" className="border-2 hover:bg-orange-400 hover:border-purple-400 px-4 py-3 my-8 mx-auto flex items-center">Let's Submit</button>
             </form>
+
+            
         </div>
+        
+        
+        
+        
+        
     );
 };
 

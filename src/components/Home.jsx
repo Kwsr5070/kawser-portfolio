@@ -1,5 +1,6 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import img from '../assets/My Pic.png'
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -14,11 +15,12 @@ const Home = () => {
                 
                 
                 <div className="text-center">
-                    <button className=" text-gray-300 group border px-6 py-3 flex items-center shadow-md hover:bg-gray-950 hover:border-pink-600 transition duration-300 ease-in-out">Work View 
-                    <span className="group-hover:rotate-90 duration-300">
-                    <HiArrowNarrowRight className=" ml-2"/>
-                    </span>
-                    </button>
+                    <Link to="/about" className=" text-gray-300 group border px-6 py-3 flex items-center shadow-md hover:bg-gray-950 hover:border-pink-600 transition duration-300 ease-in-out">
+                      View work 
+                      <span className="group-hover:rotate-90 duration-300">
+                        <HiArrowNarrowRight className=" ml-2"/>
+                      </span>
+                    </Link>
                     
                 </div>
             </div>

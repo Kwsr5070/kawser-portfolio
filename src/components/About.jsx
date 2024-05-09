@@ -1,3 +1,6 @@
+import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
+
 const About = () => {
     return (
         <div className="bg-[#0a192f] w-full min-h-screen text-gray-300">
@@ -39,7 +42,15 @@ const About = () => {
                             <p className="text-4xl text-bold text-center border-b-4 border-orange-300 gap-8 pb-3">Let's Connect!</p>
                         If you're passionate about frontend development and are looking for a dedicated and enthusiastic team member, I'd love to connect! Feel free to reach out to me via email or connect with me on LinkedIn. Let's embark on this exciting journey together!
                         </div>
-                    </div> 
+                    </div>
+                    <div className="text-center py-4">
+                    <Link to="/skill" className="text-gray-300 group border px-6 py-3 flex items-center shadow-md hover:bg-gray-950 hover:border-pink-600 transition duration-300 ease-in-out">
+                        Go to Skills
+                        <span className="group-hover:rotate-90 duration-300">
+                        <HiArrowNarrowRight className=" ml-2"/>
+                      </span>
+                    </Link>
+                </div> 
                 </div>
             </div>
        
